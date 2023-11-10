@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 f = open("uber_exp.txt", "rt")
-t = open("uber.txt", "wt")
+t = open("uber.dat", "wt")
 q = open("uberoutput.txt", "wt")
 wordcount = {}
 
@@ -30,4 +30,4 @@ while True:
     
 t.close()
 f.close()
-q.close
+q.close()
