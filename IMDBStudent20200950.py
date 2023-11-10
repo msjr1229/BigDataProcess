@@ -60,4 +60,4 @@ for key, value in wordcount.items():
     
 t.close()
 f.close()
-q.close
+q.close()
