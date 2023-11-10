@@ -37,12 +37,18 @@ while True:
     z = 0
     for s1 in seperate2:
         if(z == 1):
-            words = s1.split("|")
-            for word in words:
-                if word not in wordcount:
-                    wordcount[word] = 1
+            if(s1.find("|")==-1):
+                if s1 not in wordcount:
+                    wordcount[s1] = 1
                 else:
-                    wordcount[word] += 1
+                    wordcount[s1] += 1
+            else:
+                words = s1.split("|")
+                for word in words:
+                    if word not in wordcount:
+                        wordcount[word] = 1
+                    else:
+                        wordcount[word] += 1
                         
         z += 1
 
